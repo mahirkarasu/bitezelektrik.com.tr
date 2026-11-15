@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitez Elektrik | Bitez, Yalı &amp; Aktur 7/24 Acil Elektrik Ustası</title>
+  <meta name="description" content="Bitez merkez, Bitez Yalı ve Aktur bölgesinde 7/24 elektrik arıza onarımı, müstakil ev ve bahçe aydınlatma, sigorta panosu değişimi ve klima/hidrofor tesisatı.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bitezelektrik.com.tr/">
+  <style>
+    :root {
+      --bg-page: #f6f8f5;
+      --bg-white: #ffffff;
+      --forest: #174938;
+      --forest-deep: #0e3024;
+      --mint-tint: #e8f2ee;
+      --amber: #d97706;
+      --amber-dark: #b45309;
+      --wa: #15803d;
+      --ink: #1c2421;
+      --muted: #52635c;
+      --line: #d6e0dc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--ink);
+      line-height: 1.65;
+      padding-bottom: 72px;
+    }
+    nav {
+      background: var(--bg-white);
+      border-bottom: 2px solid var(--forest);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--forest-deep);
+      letter-spacing: -0.3px;
+    }
+    .site-name span {
+      color: var(--amber);
+    }
+    .nav-call {
+      background: var(--forest);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .nav-call:hover { background: var(--forest-deep); }
+
+    .banner {
+      background: var(--forest-deep);
+      color: #ffffff;
+      padding: 46px 20px;
+    }
+    .banner-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .loc-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      color: #a7f3d0;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 2.15rem;
+      line-height: 1.22;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .banner p {
+      color: #d1e3dc;
+      font-size: 1.03rem;
+      margin-bottom: 24px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-main {
+      background: var(--amber);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+    .btn-main:hover { background: var(--amber-dark); }
+    .btn-sec {
+      background: var(--wa);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .process-card {
+      background: var(--bg-white);
+      color: var(--ink);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    }
+    .process-card h2 {
+      font-size: 1.08rem;
+      color: var(--forest-deep);
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+    .step {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 0.92rem;
+    }
+    .step:last-child { margin-bottom: 0; }
+    .step-num {
+      background: var(--mint-tint);
+      color: var(--forest);
+      font-weight: 800;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.85rem;
+    }
+
+    main {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .heading-block {
+      margin-bottom: 26px;
+    }
+    .heading-block h2 {
+      font-size: 1.55rem;
+      color: var(--forest-deep);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .heading-block p {
+      color: var(--muted);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+    .item {
+      background: var(--bg-white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 22px;
+    }
+    .item h3 {
+      color: var(--forest);
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+    .item p {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .local-box {
+      background: var(--mint-tint);
+      border: 1px solid #c2dcd1;
+      border-radius: 12px;
+      padding: 26px;
+      margin-bottom: 44px;
+    }
+    .local-box h2 {
+      font-size: 1.3rem;
+      color: var(--forest-deep);
+      margin-bottom: 8px;
+    }
+    .local-box p {
+      font-size: 0.94rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+    .pill-list span {
+      background: var(--bg-white);
+      border: 1px solid var(--line);
+      color: var(--forest-deep);
+      padding: 6px 13px;
+      border-radius: 20px;
+      font-size: 0.87rem;
+      font-weight: 600;
+    }
+
+    .qa-box {
+      background: var(--bg-white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 12px;
+    }
+    .qa-box h3 {
+      font-size: 1.02rem;
+      color: var(--forest-deep);
+      margin-bottom: 6px;
+    }
+    .qa-box p {
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    footer {
+      background: var(--forest-deep);
+      color: #b7cfc6;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.88rem;
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: none;
+      background: var(--bg-white);
+      border-top: 1px solid var(--line);
+      padding: 10px 12px;
+      gap: 10px;
+      z-index: 200;
+    }
+    .bottom-bar a {
+      flex: 1;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      .banner-inner { grid-template-columns: 1fr; }
+      h1 { font-size: 1.72rem; }
+      .bottom-bar { display: flex; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Electrician",
+        "name": "Bitez Elektrik",
+        "url": "https://bitezelektrik.com.tr/",
+        "description": "Bitez merkez, Bitez Yalı, Aktur ve Konacık çevresinde 7/24 acil elektrik arıza servisi, bahçe aydınlatma, sigorta panosu yenileme ve konut elektrik tesisatı.",
+        "areaServed": [
+          { "@type": "Place", "name": "Bitez, Bodrum" },
+          { "@type": "Place", "name": "Bitez Yalı, Bodrum" },
+          { "@type": "Place", "name": "Aktur, Bodrum" }
+        ],
+        "openingHours": "Mo-Su 00:00-23:59"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bitez Yalı ve Aktur sitesi içine ne kadar sürede ulaşım sağlıyorsunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mobil servis aracımızla Bitez köy içi, Bitez Yalı sahil şeridi, Aktur ve Konacık sınırındaki adreslere ortalama 25-40 dakika içinde ulaşıyoruz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mandalina bahçeli müstakil evlerde dış mekan aydınlatma ve sulama pompası elektriği yapıyor musunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Bitez bölgesindeki bahçeli ev ve siteler için yer altı kablo tesisatı, IP65 korumalı bahçe armatürleri ve otomatik bahçe sulama/hidrofor pano bağlantıları kuruyoruz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Eski yazlık dairelerin sigorta kutusunu ve kablolarını yeniliyor musunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bitez'deki mevcut yazlık ve apart dairelerin eski tip porselen veya yıpranmış sigorta kutularını kaçak akım röleli ve yüksek kesme kapasiteli yeni nesil panolarla değiştiriyoruz."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="site-name">BİTEZ <span>ELEKTRİK</span></div>
+    <a href="tel:+905324962448" class="nav-call">Acil Usta Çağır</a>
+  </div>
+</nav>
+
+<section class="banner">
+  <div class="banner-inner">
+    <div>
+      <span class="loc-tag">Bitez Köy İçi • Bitez Yalı • Aktur • Konacık Sınırı</span>
+      <h1>Bitez ve Yalı Bölgesi 7/24 Güvenilir Elektrik Ustası</h1>
+      <p>Müstakil bahçeli evler, yazlık siteler, sahil işletmeleri ve apart daireler için hızlı arıza müdahalesi, sigorta panosu yenileme ve dış mekan aydınlatma çözümleri.</p>
+      <div class="actions">
+        <a href="tel:+905324962448" class="btn-main">Hemen Telefonla Ara</a>
+        <a href="https://wa.me/905324962448?text=Merhaba,%20Bitez%20bölgesi%20için%20elektrik%20ustası%20arıyorum." class="btn-sec" target="_blank" rel="noopener">WhatsApp Mesaj Gönder</a>
+      </div>
+    </div>
+    <div class="process-card">
+      <h2>3 Adımda Hızlı Servis Süreci</h2>
+      <div class="step">
+        <span class="step-num">1</span>
+        <div><strong>Arıza Bildirimi &amp; Konum:</strong> Telefonla arayın veya WhatsApp üzerinden konumunuzu paylaşın.</div>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <div><strong>Ölçümlü Tespit:</strong> Bitez içi mobil ekibimiz gerekli yedek sigorta ve ölçü cihazlarıyla adresinize gelsin.</div>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div><strong>Kalıcı Onarım:</strong> TSE standartlarına uygun malzemeyle arızayı güvenle giderelim.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="heading-block">
+    <h2>Bitez Elektrik Servis Kapsamımız</h2>
+    <p>Konut, site ve sahil işletmelerinde en sık ihtiyaç duyulan elektrik bakım ve onarım işleri:</p>
+  </div>
+
+  <div class="cards">
+    <div class="item">
+      <h3>7/24 Elektrik Arıza ve Kısa Devre Onarımı</h3>
+      <p>Gece veya hafta sonu fark etmeksizin priz yanması, nötr kopması, faz kesintisi ve sigorta atması sorunlarına acil müdahale.</p>
+    </div>
+    <div class="item">
+      <h3>Sigorta Panosu ve Kaçak Akım Yenileme</h3>
+      <p>Eski tip sigorta kutularının sökülerek yerine 30mA hayat koruma röleli, düzenli ve güvenli modern pano montajı.</p>
+    </div>
+    <div class="item">
+      <h3>Bahçe, Teras ve Ağaç Aydınlatma</h3>
+      <p>Mandalina bahçeli müstakil evler, verandalar ve yürüyüş yolları için neme dayanıklı dış mekan LED aydınlatma tesisatı.</p>
+    </div>
+    <div class="item">
+      <h3>Klima, Termosifon ve Ankastre Hattı</h3>
+      <p>Yeni alınan klima, su ısıtıcı ve mutfak cihazları için panodan bağımsız kesitli besleme kablosu ve W-otomat çekimi.</p>
+    </div>
+    <div class="item">
+      <h3>Hidrofor ve Bahçe Sulama Otomasyonu</h3>
+      <p>Site ve villa su depolarındaki hidrofor motorları, kuyu pompaları ve otomatik sulama panolarının arıza bakımı.</p>
+    </div>
+    <div class="item">
+      <h3>Avize, Aplik, Priz ve İnternet Hattı</h3>
+      <p>İç mekan aydınlatma montajı, çocuk korumalı priz değişimi, TV uydu ve modem internet kablosu yenileme işleri.</p>
+    </div>
+  </div>
+
+  <section class="local-box">
+    <h2>Bitez ve Yakın Çevre Hizmet Noktaları</h2>
+    <p>Bitez mahallesinin tüm sokaklarına ve komşu koylara ek yol ücreti almadan servis sağlıyoruz:</p>
+    <div class="pill-list">
+      <span>Bitez Yalı (Sahil)</span>
+      <span>Bitez Köy İçi</span>
+      <span>Aktur Sitesi Çevresi</span>
+      <span>Pomelan &amp; Bergamut Cad.</span>
+      <span>Adaboğazı Yolu</span>
+      <span>Konacık Bitez Sınırı</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="heading-block">
+      <h2>Sıkça Sorulan Sorular</h2>
+    </div>
+    <div class="qa-box">
+      <h3>Bitez Yalı ve Aktur sitesi içine ne kadar sürede ulaşım sağlıyorsunuz?</h3>
+      <p>Mobil servis aracımızla Bitez köy içi, Bitez Yalı sahil şeridi, Aktur ve Konacık sınırındaki adreslere ortalama 25-40 dakika içinde ulaşıyoruz.</p>
+    </div>
+    <div class="qa-box">
+      <h3>Mandalina bahçeli müstakil evlerde dış mekan aydınlatma ve sulama pompası elektriği yapıyor musunuz?</h3>
+      <p>Evet. Bitez bölgesindeki bahçeli ev ve siteler için yer altı kablo tesisatı, IP65 korumalı bahçe armatürleri ve otomatik bahçe sulama/hidrofor pano bağlantıları kuruyoruz.</p>
+    </div>
+    <div class="qa-box">
+      <h3>Eski yazlık dairelerin sigorta kutusunu ve kablolarını yeniliyor musunuz?</h3>
+      <p>Bitez'deki mevcut yazlık ve apart dairelerin eski tip porselen veya yıpranmış sigorta kutularını kaçak akım röleli ve yüksek kesme kapasiteli yeni nesil panolarla değiştiriyoruz.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Bitez Elektrik • Bitez / Bodrum / Muğla • 7/24 Mobil Elektrik Teknik Servisi</p>
+</footer>
+
+<div class="bottom-bar">
+  <a href="tel:+905324962448" style="background: var(--amber);">Hemen Ara</a>
+  <a href="https://wa.me/905324962448?text=Merhaba,%20Bitez%20bölgesi%20için%20elektrik%20ustası%20arıyorum." style="background: var(--wa);">WhatsApp</a>
+</div>
+
+</body>
+</html>
